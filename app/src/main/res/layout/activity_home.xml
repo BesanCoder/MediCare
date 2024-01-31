@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBlue"
+    android:backgroundTint="@color/lightBlue"
+    tools:context=".Home">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="270dp"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:srcCompat="@drawable/ic_profile"
+        tools:layout_editor_absoluteY="24dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Hello,"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Welcome Back!"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/profile"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="13dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="110dp"
+                android:background="@color/lightBlue"
+                android:src="@drawable/ic_name" />
+
+            <TextView
+                android:id="@+id/textViewProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginTop="115dp"
+                android:gravity="center"
+                android:text="Profile"
+                android:textColor="#36454f"
+                app:layout_constraintBottom_toTopOf="@+id/profile" />
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/medicine"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="13dp"
+            app:layout_constraintStart_toStartOf="@id/profile"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="110dp"
+                android:background="@color/lightBlue"
+                android:src="@drawable/ic_medicine" />
+
+            <TextView
+                android:id="@+id/textViewMedicine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginTop="115dp"
+                android:gravity="center"
+                android:text="Medicine"
+                android:textColor="#36454f"
+                app:layout_constraintBottom_toTopOf="@+id/medicine" />
+        </androidx.cardview.widget.CardView>
+
+
+        //Reminder
+        <androidx.cardview.widget.CardView
+            android:id="@+id/reminder"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="190dp"
+            app:cardCornerRadius="13dp"
+            app:layout_constraintStart_toStartOf="@id/profile"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="110dp"
+                android:background="@color/lightBlue"
+                android:src="@drawable/ic_reminder" />
+
+            <TextView
+                android:id="@+id/textViewReminder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginTop="115dp"
+                android:gravity="center"
+                android:text="Reminder"
+                android:textColor="#36454f"
+                app:layout_constraintBottom_toTopOf="@+id/reminder" />
+        </androidx.cardview.widget.CardView>
+
+
+        //Journal
+        <androidx.cardview.widget.CardView
+            android:id="@+id/journal"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="170dp"
+            app:cardCornerRadius="13dp"
+            app:layout_constraintStart_toStartOf="@id/medicine"
+            app:layout_constraintTop_toTopOf="@id/medicine">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="110dp"
+                android:background="@color/lightBlue"
+                android:src="@drawable/ic_journal" />
+
+            <TextView
+                android:id="@+id/textViewJournal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginTop="115dp"
+                android:gravity="center"
+                android:text="Journal"
+                android:textColor="#36454f"
+                app:layout_constraintBottom_toTopOf="@+id/journal" />
+        </androidx.cardview.widget.CardView>
+
+
+        //Report
+        <androidx.cardview.widget.CardView
+            android:id="@+id/appointment"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="170dp"
+            app:cardCornerRadius="13dp"
+            app:layout_constraintStart_toStartOf="@id/reminder"
+            app:layout_constraintTop_toTopOf="@id/reminder">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="110dp"
+                android:background="@color/lightBlue"
+                android:src="@drawable/ic_appointment" />
+
+            <TextView
+                android:id="@+id/textViewReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginTop="115dp"
+                android:gravity="center"
+                android:text="Appointment"
+                android:textColor="#36454f"
+                app:layout_constraintBottom_toTopOf="@+id/report" />
+        </androidx.cardview.widget.CardView>
+
+
+        //Logout
+        <androidx.cardview.widget.CardView
+            android:id="@+id/logout"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="170dp"
+            app:cardCornerRadius="13dp"
+            app:layout_constraintStart_toStartOf="@id/journal"
+            app:layout_constraintTop_toTopOf="@id/journal">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="110dp"
+                android:background="@color/lightBlue"
+                android:src="@drawable/ic_logout" />
+
+            <TextView
+                android:id="@+id/textViewLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginTop="115dp"
+                android:gravity="center"
+                android:text="Logout"
+                android:textColor="#36454f"
+                app:layout_constraintBottom_toTopOf="@+id/logout" />
+        </androidx.cardview.widget.CardView>
+
+        <include layout="@layout/activity_nav_bottom" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
+
+
+

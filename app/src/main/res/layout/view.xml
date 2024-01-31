@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="15dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="8dp"
+    android:backgroundTint="#125488">
+
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:text="&#8942;"
+        android:textSize="20sp"
+        android:id="@+id/option"
+        android:layout_gravity="right"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        tools:ignore="RtlCompat"
+        android:clickable="true"
+        android:enabled="true"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/txtmedName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicine Name"
+            android:textColor="@color/blue2"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_semibold"/>
+
+        <TextView
+            android:id="@+id/medName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lipitor"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtmedType"
+            android:text="Form of Medicine"
+            android:textColor="@color/blue2"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:fontFamily="@font/poppins_semibold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/medType"
+            android:text="Tablets"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtmedUse"
+            android:text="How to use"
+            android:textColor="@color/blue2"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_semibold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/medUse"
+            android:text="Before or After Eat"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtmedDose"
+            android:text="Dose"
+            android:textColor="@color/blue2"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/medDose"
+            android:text="1 tablet"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtmedIntake"
+            android:text="Time to Take Medicine"
+            android:textColor="@color/blue2"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/medIntake"
+            android:text="Night"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtmedInfo"
+            android:text="Addition Information"
+            android:textColor="@color/blue2"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/medInfo"
+            android:text="Info"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_medium"/>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

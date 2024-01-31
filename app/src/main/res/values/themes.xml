@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MediCare" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Light Blue background -->
+        <item name="colorPrimary">#03A9F4</item>
+        <item name="colorPrimaryVariant">#0288D1</item> <!-- Darker Blue -->
+        <item name="colorOnPrimary">#FFFFFF</item> <!-- White -->
+        <item name="android:windowBackground">@color/lightBlue</item>
+
+        <!-- White buttons -->
+        <item name="colorSecondary">#FFFFFF</item>
+        <item name="colorSecondaryVariant">#E0E0E0</item> <!-- Lighter Grey -->
+        <item name="colorOnSecondary">#000000</item> <!-- Black -->
+        <item name="cardViewStyle">@style/AppCardView</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+    <!-- CardView style -->
+    <style name="AppCardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">#FFFFFF</item> <!-- White -->
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">4dp</item>
+    </style>
+
+    <!-- SplashScreen -->
+    <style name="SplashScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splashscreen</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    </style>
+</resources>

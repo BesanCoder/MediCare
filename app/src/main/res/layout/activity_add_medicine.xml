@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMedicine"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtmedName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medicine Name"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <EditText
+                android:id="@+id/addnameMed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txtmedType1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Form of Medicine"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <EditText
+                android:id="@+id/addtypeMed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txtmedUse1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How to Use"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <EditText
+                android:id="@+id/adduseMed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txtmedDose1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dose"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <EditText
+                android:id="@+id/adddose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txtmedIntake1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time to Take Medicine"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <EditText
+                android:id="@+id/addintake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txtmedInfo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Addition Information"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <EditText
+                android:id="@+id/addinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/savebtn"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#125488"
+                android:fontFamily="@font/poppins_medium"
+                android:shadowColor="@color/black"
+                android:text="SAVE"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:cornerRadius="4dp" />
+
+            <Button
+                android:id="@+id/listbtn"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#37CAEC"
+                android:fontFamily="@font/poppins_medium"
+                android:shadowColor="@color/black"
+                android:text="VIEW MEDICINE LIST"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:cornerRadius="4dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

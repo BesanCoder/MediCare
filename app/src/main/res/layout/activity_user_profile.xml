@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:gravity="center"
+    tools:context=".UserProfile">
+
+    <Button
+        android:id="@+id/btnEditProfile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/blue1"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="right"
+        android:shadowColor="@color/black"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:cornerRadius="6dp"
+        app:icon="@drawable/ic_edit"
+        app:iconSize="30dp"
+        app:shadowEnabled="true" />
+
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_name" />
+    <!-- Email EditText -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="@color/blue1"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="16sp"
+        app:cornerRadius="6dp" />
+
+    <!-- Password EditText -->
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:backgroundTint="@color/blue1"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="16sp"
+        app:cornerRadius="6dp" />
+
+    <Button
+        android:id="@+id/btnDeleteProfile"
+        android:text="Delete account"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cornerRadius="4dp"
+        android:backgroundTint="#D30000"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:text="Cancel"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cornerRadius="4dp"
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/poppins_medium"/>
+
+</LinearLayout>

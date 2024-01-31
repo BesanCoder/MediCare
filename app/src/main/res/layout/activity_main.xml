@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/logo2" />
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/audiowide"
+            android:textSize="15pt"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/slogan"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="6pt"
+            android:gravity="center"
+            android:text="@string/slogan"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:text="Sign Up"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="45dp"
+            app:cornerRadius="4dp"
+            android:backgroundTint="@color/blue4"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:text="Sign In"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="45dp"
+            app:cornerRadius="4dp"
+            android:backgroundTint="@color/blue3"
+            android:shadowColor="@color/black"
+            app:shadowEnabled="true"
+            android:fontFamily="@font/poppins_medium"/>
+    </LinearLayout>
+</RelativeLayout>
